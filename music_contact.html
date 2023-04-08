@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Cover Template · Bootstrap v5.0</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="cover.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0"><a class="attributes" href="home.html">Alex Marrero</a></h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link" href="music_home.html">Home</a>
+          <a class="nav-link" href="music_projects.html">Projects</a>
+          <a class="nav-link" href="music_lessons.html">Lessons</a>
+          <a class="nav-link" href="music_shows.html">Shows</a>
+          <a class="nav-link active" aria-current="page" href="music_contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="px-3">
+      <!--Section: Contact v.2-->
+      <section class="mb-4">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact</h2>
+
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-12 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form pad" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="name" class="">Name</label>
+                    <input type="text" id="name" name="name" class="form-control pad">
+
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="email" class="">Email address</label>
+                    <input type="text" id="email" name="email" class="form-control pad">
+
+                  </div>
+                </div>
+                <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <label for="subject" class="">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-control pad">
+
+                  </div>
+                </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+
+                  <div class="md-form">
+                    <label for="message">Message</label>
+                    <textarea type="text" id="message" name="message" rows="4"
+                      class="form-control md-textarea pad"></textarea>
+
+                  </div>
+
+                </div>
+              </div>
+              <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="validateForm();">Send</a>
+            </div>
+            <div class="status"></div>
+          </div>
+          <!--Grid column-->
+        </div>
+
+      </section>
+      <!--Section: Contact v.2-->
+    </main>
+
+
+    <footer class="mt-auto text-white-50">
+
+    </footer>
+  </div>
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      if (name == "") {
+        document.querySelector('.status').innerHTML = "Name cannot be empty";
+        return false;
+      }
+      var email = document.getElementById('email').value;
+      if (email == "") {
+        document.querySelector('.status').innerHTML = "Email cannot be empty";
+        return false;
+      } else {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!re.test(email)) {
+          document.querySelector('.status').innerHTML = "Email format invalid";
+          return false;
+        }
+      }
+      var subject = document.getElementById('subject').value;
+      if (subject == "") {
+        document.querySelector('.status').innerHTML = "Subject cannot be empty";
+        return false;
+      }
+      var message = document.getElementById('message').value;
+      if (message == "") {
+        document.querySelector('.status').innerHTML = "Message cannot be empty";
+        return false;
+      }
+      document.getElementById('status').innerHTML = "Sending...";
+      formData = {
+        'name': $('input[name=name]').val(),
+        'email': $('input[name=email]').val(),
+        'subject': $('input[name=subject]').val(),
+        'message': $('textarea[name=message]').val()
+      };
+
+
+      $.ajax({
+        url: "mail.php",
+        type: "POST",
+        data: formData,
+        success: function (data, textStatus, jqXHR) {
+
+          $('#status').text(data.message);
+          if (data.code) //If mail was sent successfully, reset the form.
+            $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          $('#status').text(jqXHR);
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
