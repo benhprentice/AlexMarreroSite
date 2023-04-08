@@ -33,15 +33,15 @@ body {
         position: fixed;
         bottom: 0;
         width: 100% !important;
-        max-height: 50vh !important;
+        max-height: 60vh !important;
         object-fit: cover;
         z-index:0;
     }
     .nameBackground {
-        max-height: 25vh !important;
+        max-height: 20vh !important;
     }
     .butt {
-        max-height: 25vh !important;
+        max-height: 20vh !important;
     }
 }
 
