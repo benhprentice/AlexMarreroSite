@@ -75,3 +75,22 @@ a:hover {
 .laboritorio {
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .laboritorio {
+    font-size: 12vw
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .laboritorio {
+    font-size: 12vw
+  }
+}
+
+
+@media (min-width: 1001px) {
+  .laboritorio {
+    font-size: 12vw
+  }
+}
