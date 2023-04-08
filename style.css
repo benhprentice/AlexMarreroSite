@@ -7,13 +7,10 @@
 }
 
 body {
-    /* background-color: rgb(60, 60, 60) !important; */
-    /* background-color: hsl(221, 53%, 12%) !important; */
     background-color: hsl(219, 79%, 8%) !important;
 }
 
 .nameBackground {
-    /* background-color: rgb(45, 45, 45); */
     background-color: hsl(255, 79%, 8%);
     padding-top: 1px;
     padding-bottom: 1px;
@@ -23,8 +20,6 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
-    /* font-family: 'Brandon Grotesque', sans-serif;
-    font-style: normal; */
     font-family: 'ensoenso';
     font-style: normal;
     letter-spacing: 1.82143px;
@@ -45,7 +40,7 @@ body {
     .nameBackground {
         max-height: 25vh !important;
     }
-    .button-div {
+    .butt {
         max-height: 25vh !important;
     }
 }
@@ -124,7 +119,6 @@ body {
 }
 
 .attributes {
-    /* color: rgb(245, 245, 245); */
     color: #FFFACD;
     text-decoration: none;
 }
