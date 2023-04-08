@@ -42,12 +42,6 @@ body {
         object-fit: cover;
         z-index:0;
     }
-    .button-div {
-        max-height: 20vh;
-    }
-    .nameBackground {
-        max-height: 20vh;
-    }
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -112,7 +106,7 @@ body {
     background: none;
     border: 4px solid #fff;
     border-radius: 10px;
-    width: 50%;
+    width: 60%;
     color: #ffffff;
     display: block;
     font-size: 1em;
