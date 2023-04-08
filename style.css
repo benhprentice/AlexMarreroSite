@@ -15,7 +15,9 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
-    font-family: 'Brandon Grotesque', sans-serif;
+    /* font-family: 'Brandon Grotesque', sans-serif;
+    font-style: normal; */
+    font-family: 'ensoenso';
     font-style: normal;
     letter-spacing: 1.82143px;
     font-weight: 700;
