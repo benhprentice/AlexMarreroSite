@@ -1,9 +1,5 @@
 body {
-    /* background: url(alexpointing.jpg) center center fixed; */
     background-color: rgb(60, 60, 60) !important;
-    /* background-size: cover;
-    height: 100% fixed;
-    background-repeat: no-repeat; */
 }
 
 .nameBackground {
@@ -16,7 +12,6 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
-    /* font-family: fantasy, sans-serif; */
     font-family: 'Brandon Grotesque', sans-serif;
     font-style: normal;
     letter-spacing: 1.82143px;
@@ -26,7 +21,6 @@ body {
 
 @media (max-width: 600px) {
     .alexpic {
-        /* content:url(alexFaceOriginal.jpeg); */
         object-position: center;
         position: fixed;
         bottom: 0;
@@ -64,7 +58,6 @@ body {
 
 @media (min-width: 1001px) {
     .alexpic {
-        /* content:url(alexFaceOriginal.jpeg); */
         margin-top: 40px;
         display: block;
         margin-left: auto;
@@ -74,7 +67,6 @@ body {
         max-height: 60vh !important;
         object-fit: cover;
         transform: translateX(-50%);
-        /* object-position: center; */
         position: fixed;
         bottom: 0;
     }
@@ -83,7 +75,6 @@ body {
 .button-div {
     text-align: center;
     position: relative;
-    /* bottom: 0px !important; */
     padding-bottom: 0px !important;
     margin-bottom: 0 !important;
     z-index: 1;
@@ -115,12 +106,12 @@ body {
     font-weight: bold;
     margin: 10px auto;
     padding: 1em;
-    /* padding: 1em 4em; */
     position: relative;
     text-transform: uppercase;
 }
 
 .attributes {
-    color: rgb(245, 245, 245);
+    /* color: rgb(245, 245, 245); */
+    color: #FFFACD;
     text-decoration: none;
 }
