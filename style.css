@@ -1,11 +1,12 @@
 body {
     /* background-color: rgb(60, 60, 60) !important; */
-    background-color: hsl(221, 53%, 12%) !important;
+    /* background-color: hsl(221, 53%, 12%) !important; */
+    background-color: hsl(219, 79%, 8%) !important;
 }
 
 .nameBackground {
     /* background-color: rgb(45, 45, 45); */
-    background-color: hsl(219, 79%, 8%);
+    background-color: hsl(255, 79%, 8%);
     padding-top: 1px;
     padding-bottom: 1px;
 }
