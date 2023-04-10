@@ -72,25 +72,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* .laboritorio {
-  text-align: center;
+.voice_att {
+  text-decoration: none;
+  color: #e8df78;
 }
-
-@media (max-width: 600px) {
-  .laboritorio {
-    font-size: 12vw
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1000px) {
-  .laboritorio {
-    font-size: 12vw
-  }
-}
-
-
-@media (min-width: 1001px) {
-  .laboritorio {
-    font-size: 12vw
-  }
-} */
