@@ -90,7 +90,7 @@ a:hover {
 }
 
 .questions > p {
-  line-height: 0.6;
+  margin-bottom: 0em !important;
 }
 
 .main-lang-serv {
