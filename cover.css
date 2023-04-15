@@ -84,3 +84,7 @@ a:hover {
 .performed-with {
   font-size: .8em;
 }
+
+.shows > h1, h3, h4 {
+  font-weight: 100 !important;
+}
