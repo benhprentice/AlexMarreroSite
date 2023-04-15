@@ -88,3 +88,11 @@ a:hover {
 .shows > h1, h3, h4 {
   font-weight: 100 !important;
 }
+
+.questions > p {
+  line-height: 0.6;
+}
+
+.main-lang-serv {
+  margin-top: 100px;
+}
