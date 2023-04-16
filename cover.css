@@ -96,3 +96,14 @@ a:hover {
 .main-lang-serv {
   margin-top: 100px;
 }
+
+@media (min-width: 768px) {
+  .social {
+    width: 10%;
+  }
+}
+@media (max-width: 767px) {
+  .social {
+    width: 15%;
+  }
+}
