@@ -101,6 +101,9 @@ a:hover {
   .social {
     width: 10%;
   }
+  .mic {
+    width: 60% !important;
+  }
 }
 @media (max-width: 767px) {
   .social {
