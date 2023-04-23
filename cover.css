@@ -102,6 +102,10 @@ a:hover {
   .mic {
     width: 60% !important;
   }
+
+  .slideshow-section {
+    height: 500px;
+  }
 }
 @media (max-width: 767px) {
   .social {
@@ -109,6 +113,13 @@ a:hover {
   }
   iframe {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 725px) {
+
+  .slideshow-section {
+    height: 400px;
   }
 }
 
