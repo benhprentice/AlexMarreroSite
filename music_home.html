@@ -47,8 +47,39 @@
           <a class="nav-link" href="music_videos.html">Videos</a>
           <a class="nav-link" href="music_contact.html">Contact</a>
         </nav>
+        <!-- <nav class="navbar navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link scroll-link" href="{{ url_for('home') }}">
+                  <img src=../static/button_images/home1.png width="150px" height="37.5px"
+                    onmouseover="this.src='../static/button_images/home2.png';"
+                    onmouseout="this.src='../static/button_images/home1.png';" />
+                  <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link scroll-link" href="{{ url_for('myaccount') }}">
+                  <img src=../static/button_images/myaccount1.png width="150px" height="37.5px"
+                    onmouseover="this.src='../static/button_images/myaccount2.png';"
+                    onmouseout="this.src='../static/button_images/myaccount1.png';" />
+                </a>
+              <li class="nav-item active">
+                <a class="nav-link scroll-link" href="music_videos.html">Videos</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link scroll-link" href="music_contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav> -->
       </div>
     </header>
+
 
     <main class="px-3">
       <!-- <div class="music_photos">
@@ -60,36 +91,36 @@
 
       <!-- Slideshow container -->
       <section class="slideshow-section">
-      <div class="slideshow-container">
+        <div class="slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides">
-          <img class="music_photo" src="alex_guitar.jpg" width="80%">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides">
+            <img class="music_photo" src="alex_guitar.jpg" width="80%">
+          </div>
+
+          <div class="mySlides">
+            <img class="music_photo" src="AlexPointing.jpeg" width="80%">
+          </div>
+
+          <div class="mySlides">
+            <img class="music_photo" src="alex_percussion.jpg" width="80%">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <div style="text-align:left">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
         </div>
+        <br>
 
-        <div class="mySlides">
-          <img class="music_photo" src="AlexPointing.jpeg" width="80%">
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-
-        <div class="mySlides">
-          <img class="music_photo" src="alex_percussion.jpg" width="80%">
-        </div>
-
-        <!-- Next and previous buttons -->
-        <div style="text-align:left">
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-      </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-    </section>
+      </section>
 
 
 
@@ -130,31 +161,31 @@
   <script>
     let slideIndex = 1;
     showSlides(slideIndex);
-    
+
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-    
+
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-    
+
     function showSlides(n) {
       let i;
       let slides = document.getElementsByClassName("mySlides");
       let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
       for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+        slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
     }
-    </script>
+  </script>
 
 </body>
 
