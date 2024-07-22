@@ -16,13 +16,35 @@
         <div class="button-row">
             <button type="button" class="button" onclick="window.location.href='https://alexmarreromusic.com';">Music</button>
             <button type="button" class="button" onclick="window.location.href='voice_over_home.html';">Voice Overs</button>
-            <a href="https://kutx.org/shows/horizontes/" target="_blank">
-                <button type="button" class="button">
-                    Horizontes on KUTX
-                </button>
-            </a>
+            <button type="button" class="button" onclick="window.location.href='https://kutx.org/shows/horizontes/';">
+                Horizontes on KUTX
+            </button>
         </div>
     </div>
     <img class="alexpic" src="alexFaceOriginal.jpeg">
+
+    <script>
+        function setEqualButtonWidth() {
+            const buttons = document.querySelectorAll('.button');
+            let maxWidth = 0;
+
+            // Find the maximum width of the buttons
+            buttons.forEach(button => {
+                const width = button.getBoundingClientRect().width;
+                if (width > maxWidth) {
+                    maxWidth = width;
+                }
+            });
+
+            // Set all buttons to the maximum width
+            buttons.forEach(button => {
+                button.style.width = `${maxWidth}px`;
+            });
+        }
+
+        // Run the function on page load and on resize
+        window.addEventListener('load', setEqualButtonWidth);
+        window.addEventListener('resize', setEqualButtonWidth);
+    </script>
 </body>
 </html>

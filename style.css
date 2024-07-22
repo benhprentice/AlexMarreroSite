@@ -19,22 +19,27 @@ body {
         max-height: 20vh !important;
     }
     .name {
-        padding-top: 0.5em;  /* Reduced padding */
-        padding-bottom: 0.5em;  /* Reduced padding */
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
         width: 80vw !important;
         text-align: center;
         display: block;
         margin: auto;
     }
     .button-div {
-        margin-top: 5px; /* Less space between "ALEX MARRERO" and buttons */
-        padding-bottom: 20px; /* Add padding to avoid overlap */
+        margin-top: 5px;
+        padding-bottom: 20px;
     }
     .button-row {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* Space between buttons */
+        gap: 10px;
+    }
+    .button {
+        width: 80vw; /* Ensure all buttons are the same width */
+        max-width: 400px; /* Prevent excessive width */
+        min-width: 200px; /* Ensure buttons are not too narrow */
     }
 }
 
@@ -59,15 +64,18 @@ body {
         margin: auto;
     }
     .button-div {
-        margin-top: 20px; /* Less space between "ALEX MARRERO" and buttons */
-        padding-bottom: 30px; /* Add padding to avoid overlap */
+        margin-top: 20px;
+        padding-bottom: 30px;
     }
     .button-row {
         display: flex;
         flex-direction: row;
-        justify-content: center; /* Center buttons */
-        gap: 15px; /* Space between buttons */
-        flex-wrap: nowrap; /* Ensure buttons stay on one line */
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+    .button {
+        width: 200px; /* Ensure all buttons have the same width */
     }
 }
 
@@ -90,17 +98,20 @@ body {
         margin: auto;
     }
     .button-div {
-        margin-top: 20px; /* Adjusted space between "ALEX MARRERO" and buttons */
-        padding-bottom: 30px; /* Add padding to avoid overlap */
+        margin-top: 20px;
+        padding-bottom: 30px;
     }
     .button-row {
         display: flex;
         flex-direction: row;
-        justify-content: center; /* Center buttons */
-        gap: 20px; /* Space between buttons */
-        flex-wrap: nowrap; /* Ensure buttons stay on one line */
-        max-width: 80%; /* Ensure buttons fit within the viewport */
-        margin: auto; /* Center buttons horizontally */
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: nowrap;
+        max-width: 80%;
+        margin: auto;
+    }
+    .button {
+        width: 200px; /* Ensure all buttons have the same width */
     }
 }
 
@@ -123,21 +134,20 @@ body {
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
     margin: 0;
     outline: none;
     padding: 13px 23px;
-    position: relative;
     text-align: center;
     text-decoration: none;
     touch-action: manipulation;
-    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
     user-select: none;
     -webkit-user-select: none;
-    width: auto;
+    /* Width will be controlled by JavaScript */
 }
 
 .button:focus-visible {
