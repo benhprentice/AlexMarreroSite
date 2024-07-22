@@ -24,15 +24,15 @@ body {
         max-height: 20vh !important;
     }
     .name {
-        padding-top: 1em;
-        padding-bottom: 1em;
+        padding-top: 0.5em;  /* Reduced padding */
+        padding-bottom: 0.5em;  /* Reduced padding */
         width: 80vw !important;
         text-align: center;
         display: block;
         margin: auto;
     }
     .button-div {
-        margin-top: 10px; /* Less space between "ALEX MARRERO" and buttons */
+        margin-top: 5px; /* Less space between "ALEX MARRERO" and buttons */
         padding-bottom: 20px; /* Add padding to avoid overlap */
     }
     .button-div .row > div {
