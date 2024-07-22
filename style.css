@@ -32,8 +32,11 @@ body {
         margin: auto;
     }
     .button-div {
-        margin-top: 20px; /* Add margin to separate from the image */
+        margin-top: 10px; /* Less space between "ALEX MARRERO" and buttons */
         padding-bottom: 20px; /* Add padding to avoid overlap */
+    }
+    .button-div .row > div {
+        margin-bottom: 10px; /* More space between the buttons */
     }
 }
 
@@ -58,8 +61,11 @@ body {
         margin: auto;
     }
     .button-div {
-        margin-top: 30px; /* Add margin to separate from the image */
+        margin-top: 20px; /* Less space between "ALEX MARRERO" and buttons */
         padding-bottom: 30px; /* Add padding to avoid overlap */
+    }
+    .button-div .row > div {
+        margin-bottom: 15px; /* More space between the buttons */
     }
 }
 
@@ -82,8 +88,11 @@ body {
         margin: auto;
     }
     .button-div {
-        margin-top: 50px; /* Add margin to separate from the image */
+        margin-top: 30px; /* Adjusted space between "ALEX MARRERO" and buttons */
         padding-bottom: 50px; /* Add padding to avoid overlap */
+    }
+    .button-div .row > div {
+        margin-bottom: 20px; /* More space between the buttons */
     }
 }
 
