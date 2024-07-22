@@ -8,20 +8,19 @@ body {
     padding-bottom: 1px;
 }
 
+.image-container {
+    position: relative;
+    margin-top: 20px;
+}
+
 @media (max-width: 600px) {
     .alexpic {
         object-position: center;
-        position: fixed;
-        bottom: 0;
-        width: 100% !important;
+        width: 100%;
         max-height: 60vh !important;
         object-fit: cover;
-        z-index:0;
     }
     .nameBackground {
-        max-height: 20vh !important;
-    }
-    .butt {
         max-height: 20vh !important;
     }
     .name {
@@ -40,7 +39,7 @@ body {
 
 @media (min-width: 600px) and (max-width: 1000px) {
     .alexpic {
-        content:url(alexFaceOriginal.jpeg);
+        content: url(alexFaceOriginal.jpeg);
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -49,10 +48,6 @@ body {
         max-height: 65vh !important;
         object-fit: cover;
         object-position: center;
-        left: 50%;
-        transform: translateX(-50%);
-        position: fixed;
-        bottom: 0;
     }
     .name {
         padding-top: 1em;
@@ -68,7 +63,6 @@ body {
     }
 }
 
-
 @media (min-width: 1001px) {
     .alexpic {
         margin-top: 40px;
@@ -76,12 +70,8 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 30vw;
-        left: 50%;
         max-height: 60vh !important;
         object-fit: cover;
-        transform: translateX(-50%);
-        position: fixed;
-        bottom: 0;
     }
     .name {
         padding-top: 1em;
@@ -105,51 +95,48 @@ body {
 .button-div {
     text-align: center;
     position: relative;
-    padding-bottom: 0px !important;
-    margin-bottom: 0 !important;
-    z-index: 1;
     margin-top: 30px;
 }
 
 .button {
-  background-color: hsl(219, 79%, 8%);
-  border: 1px solid #FFFFFF;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
+    background-color: hsl(219, 79%, 8%);
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
 }
 
 .button:focus-visible {
-  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-  transition: box-shadow .2s;
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
 }
 
 .button:active {
-  background-color: hsl(219, 79%, 8%);
-  border-color: #F7F7F7;
-  transform: scale(.96);
+    background-color: hsl(219, 79%, 8%);
+    border-color: #F7F7F7;
+    transform: scale(.96);
 }
 
 .button:disabled {
-  border-color: hsl(219, 79%, 8%);
-  color: hsl(219, 79%, 8%);
-  cursor: not-allowed;
-  opacity: 1;
+    border-color: hsl(219, 79%, 8%);
+    color: hsl(219, 79%, 8%);
+    cursor: not-allowed;
+    opacity: 1;
 }
