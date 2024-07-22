@@ -8,11 +8,6 @@ body {
     padding-bottom: 1px;
 }
 
-.image-container {
-    position: relative;
-    margin-top: 20px;
-}
-
 @media (max-width: 600px) {
     .alexpic {
         object-position: center;
@@ -35,12 +30,15 @@ body {
         margin-top: 5px; /* Less space between "ALEX MARRERO" and buttons */
         padding-bottom: 20px; /* Add padding to avoid overlap */
     }
-    .button-div .row > div {
-        margin-bottom: 10px; /* More space between the buttons */
+    .button-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Space between buttons */
     }
 }
 
-@media (min-width: 600px) and (max-width: 1000px) {
+@media (min-width: 601px) and (max-width: 1000px) {
     .alexpic {
         content: url(alexFaceOriginal.jpeg);
         display: block;
@@ -64,8 +62,12 @@ body {
         margin-top: 20px; /* Less space between "ALEX MARRERO" and buttons */
         padding-bottom: 30px; /* Add padding to avoid overlap */
     }
-    .button-div .row > div {
-        margin-bottom: 15px; /* More space between the buttons */
+    .button-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Center buttons */
+        gap: 15px; /* Space between buttons */
+        flex-wrap: nowrap; /* Ensure buttons stay on one line */
     }
 }
 
@@ -88,11 +90,17 @@ body {
         margin: auto;
     }
     .button-div {
-        margin-top: 30px; /* Adjusted space between "ALEX MARRERO" and buttons */
-        padding-bottom: 50px; /* Add padding to avoid overlap */
+        margin-top: 20px; /* Adjusted space between "ALEX MARRERO" and buttons */
+        padding-bottom: 30px; /* Add padding to avoid overlap */
     }
-    .button-div .row > div {
-        margin-bottom: 20px; /* More space between the buttons */
+    .button-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Center buttons */
+        gap: 20px; /* Space between buttons */
+        flex-wrap: nowrap; /* Ensure buttons stay on one line */
+        max-width: 80%; /* Ensure buttons fit within the viewport */
+        margin: auto; /* Center buttons horizontally */
     }
 }
 

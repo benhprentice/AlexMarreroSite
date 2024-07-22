@@ -5,29 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alex Marrero</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
     <div class="nameBackground">
-        <a href="home.html"><img class="name" src="AlexName.png" alt="Alex Name"></a>
+        <a href="home.html"><img class="name" src="AlexName.png"></a>
     </div>
-
-    <div class="container button-div">
-        <div class="row justify-content-between">
-            <div class="col-sm-4 text-center">
-                <button class="button" onclick="window.location.href='https://alexmarreromusic.com';">Music</button>
-            </div>
-            <div class="col-sm-4 text-center">
-                <button class="button" onclick="window.location.href='voice_over_home.html';">Voice Overs</button>
-            </div>
-            <div class="col-sm-4 text-center">
-                <button class="button" onclick="window.location.href='https://kutx.org/shows/horizontes/';">Horizontes:<br>Weekly Radio Show on KUTX</button>
-            </div>
+    <div class="button-div">
+        <div class="button-row">
+            <button type="button" class="button" onclick="window.location.href='https://alexmarreromusic.com';">Music</button>
+            <button type="button" class="button" onclick="window.location.href='voice_over_home.html';">Voice Overs</button>
+            <a href="https://kutx.org/shows/horizontes/" target="_blank">
+                <button type="button" class="button">
+                    Horizontes on KUTX
+                </button>
+            </a>
         </div>
     </div>
-
-    <div class="image-container">
-        <img class="alexpic" src="alexFaceOriginal.jpeg" alt="Alex Marrero">
-    </div>
+    <img class="alexpic" src="alexFaceOriginal.jpeg">
 </body>
 </html>
